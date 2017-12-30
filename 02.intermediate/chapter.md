@@ -1,7 +1,8 @@
 ---
-title: Intermediate
+title: Intermediaire
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
 
 ### Chapter 2
