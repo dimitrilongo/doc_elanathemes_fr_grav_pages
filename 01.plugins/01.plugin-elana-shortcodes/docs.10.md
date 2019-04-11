@@ -1,6 +1,6 @@
 ---
 title: 'Plugin Elana Shortcodes'
-media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png,elana-shortcode-alert.png,elana-shortcode-image.png,elana-shortcode-youtube.png,elana-shortcode-gallery.png'
+media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png,elana-shortcode-alert.png,elana-shortcode-image.png,elana-shortcode-youtube.png,elana-shortcode-gallery.png,elana-shortcode-columns.png'
 taxonomy:
     category:
         - docs
@@ -147,11 +147,10 @@ This shortcode create a responsive slideshow. The Slideshow component is fully r
 The <code>[raw][ui-slide][/raw]</code> shortcode that defines each _slide_ has the following parameters:
 
 * `title` - The text to display for the actual slide caption
-*
+
 ##### Example
 
 ![](elana-shortcode-gallery.png)
-
 
 #### Image
 
@@ -200,13 +199,38 @@ This shortcode show a Google Map through API.
 
 #### Columns
 
+This shortcode sisplay your content in multiple text columns.
+
 [prism classes="language-markdown line-numbers"]
 [raw]
-[ui-columns][/ui-columns]
+[ui-columns small="1" medium="1" large="2" xlarge="3"]
+[ui-column]
+In tempor sed sapien eu porttitor. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. Quisque et enim vitae orci [placerat tincidunt](#) id ac eros. Fusce et gravida libero.
+
+Phasellus cursus odio ex, in **mattis lorem tincidunt** vel. Donec nibh odio, dapibus non ligula a, semper ornare massa. Nulla consectetur eu nunc sed ultrices. Integer at turpis dolor.
+[/ui-column]
+[ui-column]
+In tempor sed sapien eu porttitor. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. Quisque et enim vitae orci [placerat tincidunt](#) id ac eros. Fusce et gravida libero.
+
+Phasellus cursus odio ex, in **mattis lorem tincidunt** vel. Donec nibh odio, dapibus non ligula a, semper ornare massa. Nulla consectetur eu nunc sed ultrices. Integer at turpis dolor.
+[/ui-column]
+[/ui-columns]
 [/raw]
 [/prism]
 
+* `xlarge` number of responsive column, can be `1` to `6` - (1 by default) - Only affects device widths of 1600px and higher
+* `large` number of responsive column, can be `1` to `6` - (1 by default) - Only affects device widths of 960px and higher
+* `medium` number of responsive column, can be `1` to `6` - (1 by default) - Only affects device widths of 1200px and higher
+* `small` number of responsive column, can be `1` to `6` - (2 by default) - Only affects device widths of 640px and higher
+* `divider` display a vertical line between column, can be `true` or `false` - (true by default)
+
+The <code>[raw][ui-column][/raw]</code> shortcode that defines each _column_ has the following parameters:
+
+* `span` To have an inline element span the whole width of the columns, can be `true` or `false` - (false by default)
+
 ##### Example
+
+![](elana-shortcode-columns.png)
 
 #### Youtube
 
