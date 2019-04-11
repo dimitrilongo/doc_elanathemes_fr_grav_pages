@@ -1,6 +1,6 @@
 ---
 title: 'Plugin Elana Shortcodes'
-media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png,elana-shortcode-alert.png,elana-shortcode-image.png'
+media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png,elana-shortcode-alert.png,elana-shortcode-image.png,elana-shortcode-youtube.png'
 taxonomy:
     category:
         - docs
@@ -75,10 +75,6 @@ Phasellus cursus odio ex, in mattis lorem tincidunt vel. [Donec nibh odio](#), d
 [/raw]
 [/prism]
 
-##### Example
-
-![](elana-shortcode-switcher.png)
-
 The <code>[raw][ui-switchers][/raw]</code> shortcode has some optional parameters:
 
 * `tab` Tab effect can be `true` or `false` - (true by default)
@@ -93,6 +89,9 @@ The <code>[raw][ui-switcher][/raw]</code> shortcode that defines each _tab_ has 
 
 You can use whatever markdown you wish in the tab itself.  They are auto-adjusting and fully responsive.
 
+##### Example
+
+![](elana-shortcode-switcher.png)
 
 #### Alert
 
@@ -108,10 +107,6 @@ Phasellus cursus odio ex, in **mattis lorem tincidunt** vel. Donec nibh odio, da
 [/raw]
 [/prism]
 
-##### Example
-
-![](elana-shortcode-alert.png)
-
 The <code>[raw][ui-alert][/raw]</code> shortcode has some optional parameters:
 
 * `title` - The text to display for the actual Alert box title
@@ -121,6 +116,9 @@ The <code>[raw][ui-alert][/raw]</code> shortcode has some optional parameters:
 * `color` There are several style modifiers available, can be `primary`, `success`, `warning` or `danger` (center by default)
 * `icon` add scalable vector icons, can be `user`, `home`, `lock` ... (none by default) [See all kind of icons](/components/icons)
 
+##### Example
+
+![](elana-shortcode-alert.png)
 
 #### Gallery
 
@@ -147,10 +145,6 @@ This shortcode display an image with our without a responsive lightbox.
 [/raw]
 [/prism]
 
-##### Example
-
-![](elana-shortcode-image.png)
-
 The <code>[raw][ui-image][/raw]</code> shortcode has some optional parameters:
 
 * `lightbox` create a responsive lightbox can be `true` or `false` - (true by default)
@@ -160,6 +154,10 @@ The <code>[raw][ui-image][/raw]</code> shortcode has some optional parameters:
 * `figcaption` defines a caption for image
 * `copyright` defines a copyright for image
 * `copyright-link` Add an URL to copyright
+
+##### Example
+
+![](elana-shortcode-image.png)
 
 #### Maps
 
@@ -192,12 +190,21 @@ This shortcode show a Google Map through API.
 
 #### Youtube
 
-This shortcode ...
+This shortcode embed a responsive Youtube video, can be inside a responsive lightbox.
 
 [prism classes="language-markdown line-numbers"]
 [raw]
-[ui-youtube][/ui-youtube]
+[ui-youtube id="11Wh8RzcQZr4" lightbox="1" automute="1" autoplay="1" padding="small" btnlabel="Video Caption"][/ui-youtube]
 [/raw]
 [/prism]
 
+* `id` Youtube video ID
+* `lightbox` create a responsive lightbox can be `true` or `false` - (false by default)
+* `autoplay` autoplay the video, can be `true` or `false` - (false by default)
+* `automute` automute the video, can be `true` or `false` - (false by default)
+* `padding` add spacing, can be `small` or `large` (small by default)
+* `btnlabel` defines a button label to open a lightbox
+
 ##### Example
+
+![](elana-shortcode-youtube.png)
