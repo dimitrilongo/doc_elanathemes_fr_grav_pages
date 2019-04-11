@@ -1,5 +1,9 @@
 ---
 title: 'Plugin Elana Shortcodes'
+page-toc:
+    active: true
+    start: 2
+    depth: 3
 media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png'
 taxonomy:
     category:
