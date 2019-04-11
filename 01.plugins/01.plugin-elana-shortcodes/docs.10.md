@@ -1,13 +1,13 @@
 ---
 title: 'Plugin Elana Shortcodes'
+media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png,elana-shortcode-alert.png,elana-shortcode-image.png'
+taxonomy:
+    category:
+        - docs
 page-toc:
     active: true
     start: 2
     depth: 3
-media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png'
-taxonomy:
-    category:
-        - docs
 ---
 
 # Elana Shortcode Plugin
@@ -117,7 +117,7 @@ The <code>[raw][ui-alert][/raw]</code> shortcode has some optional parameters:
 * `title` - The text to display for the actual Alert box title
 * `close` create a close button and enable its functionality can be `true` or `false` - (true by default)
 * `style` There are several style modifiers available, can be `div`, `p`, `h1` to `h6` (h3 by default)
-* `padding` add spacing, can be `small` or `large` (center by default)
+* `padding` add spacing, can be `small` or `large` (small by default)
 * `color` There are several style modifiers available, can be `primary`, `success`, `warning` or `danger` (center by default)
 * `icon` add scalable vector icons, can be `user`, `home`, `lock` ... (none by default) [See all kind of icons](/components/icons)
 
@@ -137,16 +137,29 @@ This shortcode ...
 
 #### Image
 
-This shortcode ...
+This shortcode display an image with our without a responsive lightbox.
 
 [prism classes="language-markdown line-numbers"]
 [raw]
-[ui-image][/ui-image]
+[uikit-image shadowbottom="1" lightbox="1" padding="small" shadow="small" caption="Image Caption"]
+![](elana-shortcode-image.png)
+[/uikit-image]
 [/raw]
 [/prism]
 
 ##### Example
 
+![](elana-shortcode-image.png)
+
+The <code>[raw][ui-image][/raw]</code> shortcode has some optional parameters:
+
+* `lightbox` create a responsive lightbox can be `true` or `false` - (true by default)
+* `padding` add spacing, can be `small` or `large` (small by default)
+* `shadowbottom` Apply a box shadow at the bottom of map,can be `true` or `false` - (true by default)
+* `shadow` apply different box shadows to map, can be `small`, `medium`, `large` or `xlarge` (small by default)
+* `figcaption` defines a caption for image
+* `copyright` defines a copyright for image
+* `copyright-link` Add an URL to copyright
 
 #### Maps
 
