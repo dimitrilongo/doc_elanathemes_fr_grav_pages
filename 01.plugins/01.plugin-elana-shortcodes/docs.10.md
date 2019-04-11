@@ -30,7 +30,9 @@ It currently provides:
 
 Typically a plugin should be installed via [GPM](http://learn.getgrav.org/advanced/grav-gpm) (Grav Package Manager):
 
-**NOT AVAILABLE**
+
+!! **NOT AVAILABLE**
+
 
 Alternatively it can be installed via the [Admin Plugin](http://learn.getgrav.org/admin-panel/plugins)
 
@@ -77,15 +79,15 @@ Phasellus cursus odio ex, in mattis lorem tincidunt vel. [Donec nibh odio](#), d
 
 ![](elana-shortcode-switcher.png)
 
-The [raw][ui-switchers][/raw] shortcode has some optional parameters:
+The <code>[raw][ui-switchers][/raw]</code> shortcode has some optional parameters:
 
 * `tab` Tab effect can be `true` or `false` - (true by default)
-* `anim` smooth animations can be `fade`, `scale-up`, `scale-down` ... (fade by default)[See all kind of anim](/components/animation)
+* `anim` smooth animations can be `fade`, `scale-up`, `scale-down` ... (fade by default) [See all kind of anim](/components/animation)
 * `align` modify the alignment of the navigations, can be `left`, `right` or `center` (center by default)
 * `button` Button style can be `true` or `false` - (false by default)
 * `color` modify the button's style, can be `primary`, `secondary` or `center` (center by default)
 
-The [raw][ui-switcher][/raw] shortcode that defines each _tab_ has the following parameters:
+The <code>[raw][ui-switcher][/raw]</code> shortcode that defines each _tab_ has the following parameters:
 
 * `title` - The text to display for the actual tab title
 
@@ -98,12 +100,26 @@ An example of the Alert shortcode is as follows:
 
 [prism classes="language-markdown line-numbers"]
 [raw]
-[ui-alert][/ui-alert]
+[ui-alert title="Alert Box Title" close="1" color="danger" padding="small" style="h3" icon="warning"]
+In tempor sed sapien eu porttitor. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. Quisque et enim vitae orci [placerat tincidunt](#) id ac eros. Fusce et gravida libero.
+
+Phasellus cursus odio ex, in **mattis lorem tincidunt** vel. Donec nibh odio, dapibus non ligula a, semper ornare massa. Nulla consectetur eu nunc sed ultrices. Integer at turpis dolor.
+[/ui-alert]
 [/raw]
 [/prism]
 
 ##### Example
 
+![](elana-shortcode-alert.png)
+
+The <code>[raw][ui-alert][/raw]</code> shortcode has some optional parameters:
+
+* `title` - The text to display for the actual Alert box title
+* `close` create a close button and enable its functionality can be `true` or `false` - (true by default)
+* `style` There are several style modifiers available, can be `div`, `p`, `h1` to `h6` (h3 by default)
+* `padding` add spacing, can be `small` or `large` (center by default)
+* `color` There are several style modifiers available, can be `primary`, `success`, `warning` or `danger` (center by default)
+* `icon` add scalable vector icons, can be `user`, `home`, `lock` ... (none by default) [See all kind of icons](/components/icons)
 
 
 #### Gallery
