@@ -1,6 +1,6 @@
 ---
 title: 'Plugin Elana Shortcodes'
-media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png,elana-shortcode-alert.png,elana-shortcode-image.png,elana-shortcode-youtube.png'
+media_order: 'elana-shortcode-maps.png,elana-shortcode-switcher.png,elana-shortcode-alert.png,elana-shortcode-image.png,elana-shortcode-youtube.png,elana-shortcode-gallery.png'
 taxonomy:
     category:
         - docs
@@ -122,15 +122,35 @@ The <code>[raw][ui-alert][/raw]</code> shortcode has some optional parameters:
 
 #### Gallery
 
-This shortcode ...
+This shortcode create a responsive slideshow. The Slideshow component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops.
 
 [prism classes="language-markdown line-numbers"]
 [raw]
-[ui-gallery][/ui-gallery]
+[ui-gallery contrast="1" navlarge="1" autoplay="1" padding="small" caption="1" ratio="12:5"]
+[ui-slide title="Slide #1"]
+![](slide1.jpg)
+[/ui-slide]
+[ui-slide title="Slide #2"]
+![](slide2.jpg)
+[/ui-slide]
+[/ui-gallery]
 [/raw]
 [/prism]
 
+* `contrast` apply a light or dark color for better visibility, can be `true` or `false` - (false by default)
+* `navlarge` increase the size of the slidenav icon, can be `true` or `false` - (false by default)
+* `ratio` the height adapts according to the defined ratio, can be `4:3` ... - (16:9 by default)
+* `caption` add slide caption (overlay), can be `true` or `false` - (true by default)
+* `padding` add spacing, can be `small` or `large` (small by default)
+* `autoplay` autoplay the gallery, can be `true` or `false` - (false by default)
+
+The <code>[raw][ui-slide][/raw]</code> shortcode that defines each _slide_ has the following parameters:
+
+* `title` - The text to display for the actual slide caption
+*
 ##### Example
+
+![](elana-shortcode-gallery.png)
 
 
 #### Image
