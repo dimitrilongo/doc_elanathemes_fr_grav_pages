@@ -25,6 +25,7 @@ It currently provides:
 * Maps
 * Columns
 * Youtube
+* Countdown
 
 ## Installation
 
@@ -252,3 +253,30 @@ This shortcode embed a responsive Youtube video, can be inside a responsive ligh
 ##### Example
 
 ![](elana-shortcode-youtube.png)
+
+#### Countdown
+
+This shortcode create a simple countdown timer.
+
+[prism classes="language-markdown line-numbers"]
+[raw]
+[el-countdown date="2019-04-19T06:25:43+00:00" separator="1" dayslabel="Days" hourslabel="Hours" minuteslabel="Minutes" secondslabel="Seconds"][/el-countdown]
+[/raw]
+[/prism]
+
+* `date` define a date when the countdown should expire
+* `separator` insert a separator between each number, can be `true` or `false` - (true by default)
+* `dayslabel` Days label
+* `hourslabel` Hours label
+* `minuteslabel` Minutes label
+* `secondslabel` Seconds label
+
+##### Date Format
+
+Just add date: `YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support) format, e.g. `2017-12-04T22:00:00+00:00` (UTC time).
+
+You can use this generator [timestampgenerator](https://timestampgenerator.com/)
+
+##### Example
+
+![](elana-shortcode-countdown.png)
